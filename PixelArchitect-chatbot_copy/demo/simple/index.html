@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="../../target/ApiAi.js"></script>
+    <script src="demoFunctions.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="chatbot_style.css">
+    
+
+</head>
+<body>
+
+
+
+<div class="container" style="display:none">
+    <div class="row">
+        <h5>BC's Best Live Music</h5>
+    </div>
+    <div class="row">
+        <div class="input-field col s10" style="display:none">
+            <input id="access_token" type="text" value="825eeb3cba0d444a891b10cafb445914">
+            <label for="access_token">Access token</label>
+        </div>
+        <div class="col s2 input-field">
+            <a class="waves-effect waves-light btn" id="set_access_token">Start</a>
+        </div>
+    </div>
+</div>
+
+
+
+    <div></div><i class="fas fa-comments" id="chat-icon"></i>
+    
+    <div  id = "text-before-icon">Got a Question?</div>
+
+
+
+
+<div class="wrapper">
+  <div>
+  <div class="chat-box">
+    <div class="chat-head">
+        <i class="fas fa-comment" style="font-size:20px; color:white; padding: 15px"> &nbsp; Chat -- Pixel Architect </i>
+        <i class="fas fa-times" id = "close" style="font-size:20px; color:white; padding: 15px; display:inline"> </i>
+
+    </div>
+    <div class="chat-body">
+      <div id="msg-insert">
+
+        
+      </div>
+
+
+
+      <div class="chat-text">
+
+          <textarea id="q" class="control-label" style="border: thin red solid;" placeholder="Please input your text here."></textarea>
+          <input type="button" class="click" id="click" value="SEND" > 
+
+       
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="col s2"></div>
+<div class="col s3" style="display:none" >
+<!--h5>Request payload:</h5>
+<pre id="jsonRequest"></pre-->
+<h5>Response payload:</h5>
+<pre id="jsonResponse"></pre>
+</div>
+
+
+
+
+
+
+<script defer src="layout.js"></script>
+
+
+
+
+</body>
+</html>
